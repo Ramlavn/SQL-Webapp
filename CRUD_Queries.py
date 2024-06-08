@@ -23,11 +23,12 @@ st.write(f"Current Date: {datetime.now().strftime('%Y-%m-%d')}")
 st.write("")
 
 # Setting title
-st.markdown("""<h1 style = 'margin-top: -30px;'> CRUD Operations with MySQL<h1>""", 
+st.markdown("""<h1 style='margin-top: -5px; margin-bottom: -10px;'>CRUD Operations with MySQL</h1>""", 
             unsafe_allow_html=True)
 
+
 #Displaying options in sidebar
-options = st.sidebar.selectbox("Select an Operation",('Select','Create','Read','Update','Delete'))
+options = st.selectbox("Select an Operation",('Select','Create','Read','Update','Delete'))
 
 
 # To perform selected CRUD operation
